@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import Login from '../../pages/Registeration/Login';
 
 import DrawerToggleButton from '../SideDrawer/drawerToggleButton';
 import './Toolbar.css';
@@ -12,7 +14,7 @@ const toolbar = props => (
         <div className="toolbar__logo"><a href="/">E-services</a></div>
         
         <div className="toolbar_navigation-items">
-            <a href="#">LOGIN</a>
+            <p><Link to={Login}>LOGIN</Link></p>
         </div>
     </nav>
   </header>

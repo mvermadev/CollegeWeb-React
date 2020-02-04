@@ -16,18 +16,18 @@
   padding: 0 1rem;
 }
 
-.toolbar__logo a {
+.toolbar__logo p {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
-.toolbar_navigation-items a {
+.toolbar_navigation-items p {
   color: white;
   text-decoration: none;
 }
 
-.toolbar_navigation-items a:hover,
-.toolbar_navigation-items a:active {
+.toolbar_navigation-items p:hover,
+.toolbar_navigation-items p:active {
   color: #fa923f;
 }
