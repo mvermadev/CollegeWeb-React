@@ -1,0 +1,23 @@
+.FooterHead{
+    background-color: #3c1a3d;
+}
+
+.Footer .layer1{
+    display: flex;
+}
+
+.Footer .layer{
+    padding-top: 10px;
+}
+
+.Footer .layer1 a{
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.FooterHead .cpy{
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}

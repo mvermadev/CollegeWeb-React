@@ -1,0 +1,16 @@
+.Service p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+.items img{
+    width: 50vw;
+    height: 150px;
+}
