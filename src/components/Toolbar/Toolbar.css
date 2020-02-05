@@ -11,23 +11,23 @@
 .toolbar__navigation {
   display: flex;
   justify-content: space-between;
-  height: 100%;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0px 1rem;
 }
 
-.toolbar__logo a {
+.toolbar__logo p{
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
-.toolbar_navigation-items p {
+.toolbar_navigation-items p{
   color: white;
   text-decoration: none;
+  
 }
 
-.toolbar_navigation-items p:hover,
-.toolbar_navigation-items p:active {
+.toolbar_navigation-items Link:hover,
+.toolbar_navigation-items Link:active {
   color: #fa923f;
 }

@@ -1,0 +1,21 @@
+.Partner{
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+.partnerForm{
+    margin: 10px;
+    background-color: #f7e9f7;
+    padding: 20px 15px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px silver;
+}
+
+.Partner{
+    background-image: url('../../../components/Main/img/bodyBg.jpg');
+    background-attachment: fixed;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}

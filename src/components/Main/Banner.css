@@ -14,11 +14,16 @@
     right: 50%;
 }
 
-#main{
+/* #main{
     background-image: url('./img/bodyBg.jpg');
     background-attachment: fixed;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.9; */
+    height: 100vh;
+} */
+
+#main{
+    background-color: #faf2fa;
+    height: 100vh;
 }

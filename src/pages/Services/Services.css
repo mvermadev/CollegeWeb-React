@@ -1,0 +1,25 @@
+.Services .items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* width: 200px; */
+}
+
+.Services .items{
+    box-shadow: 0px 0px 10px gray;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 7px;
+    padding: 5px 20px 5px 10px;
+}
+
+.Services .items p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.Services .items img{
+    width: auto;
+    height: 120px;
+}
