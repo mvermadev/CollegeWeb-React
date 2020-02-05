@@ -34,6 +34,12 @@
     font-size: 1.5rem;
   }
   
+  .dynamicUser a li {
+    color: #521751;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
  .side-drawer ul li:hover{
     border-radius: 20px 0 0 20px;
      background-color: #ffc9fe;

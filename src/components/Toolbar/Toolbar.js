@@ -1,12 +1,23 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 
 import DrawerToggleButton from '../SideDrawer/drawerToggleButton';
 import './Toolbar.css';
 
 class Toolbar extends Component {
-  state = {  }
-  render() { 
+
+  render() {
+    const yesUser = (
+      <div className="toolbar_navigation-items">
+      <p>Hello</p>
+      </div>
+      );
+
+      const noUser = (
+        <div className="toolbar_navigation-items">
+        <Link to="/login"><p>LOGIN</p></Link>
+        </div>
+      ); 
     return ( 
       <header className="toolbar">
       <nav className="toolbar__navigation">
@@ -15,9 +26,7 @@ class Toolbar extends Component {
       </div>
       <div className="toolbar__logo"><Link to="/"><p>E-services</p></Link></div>
       
-      <div className="toolbar_navigation-items">
-      <Link to="login"><p>LOGIN</p></Link>
-      </div>
+      {localStorage.userToken ? yesUser : noUser}
       </nav>
       </header>
      );

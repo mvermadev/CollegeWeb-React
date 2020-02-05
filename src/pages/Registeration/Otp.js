@@ -1,19 +1,55 @@
 import React, { Component } from 'react';
 import {Form, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import {OtpAuth} from '../UserFunction';
 import './Login.css'
 
 class Otp extends Component {
-    state = {  }
+    constructor()
+    {
+        super()
+        this.state = {
+            otp : ''
+        }
+
+        this.onChange = this.onChange.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
+    }
+
+    onChange(e)
+    {
+        this.setState({[e.target.name] : e.target.value})
+    }
+
+    onSubmit(e)
+    {
+        e.preventDefault()
+
+        const authCode = {
+            otp : this.state.otp
+        }
+
+        OtpAuth(authCode).then(res=>{
+            if(res)
+            {
+                console.log('err in otp auth from Otp.js')
+            }
+            else
+            {
+                this.props.history.push('/')
+            }
+        })
+    }
+
     render() { 
         return ( 
             <div className="container Login">
             <div className="loginForm">
-            <Form>
+            <Form onSubmit={this.onSubmit}>
             <Form.Group controlId="formBasicEmail">
-            <Form.Control type="number" placeholder="Enter OTP" required />
+            <Form.Control type="number" name="otp" value={this.state.otp} placeholder="Enter OTP" required onChange={this.onChange} />
             </Form.Group>
-            <Link to='/'> <Button variant="success btn btn-block" type="submit"> Get In! </Button> </Link>
+            <Button variant="success btn btn-block" type="submit"> Get In! </Button>
             </Form>
             </div>
             </div>
