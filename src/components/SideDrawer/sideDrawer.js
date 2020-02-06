@@ -39,6 +39,7 @@ class sideDrawer extends Component {
           <a href="/login"><li>Login</li></a>
          </div>
       );
+      
     return (  
       <nav className={drawerClasses}>
       <ul>{localStorage.userToken ? yesUser : noUser}

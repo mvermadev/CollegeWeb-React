@@ -41,3 +41,21 @@ export const contactInfo = user => {
     }).
     catch(err=>console.log(err + " from sending contact info"))
 }
+
+export const partnerRegisInfo = user => {
+    return axios
+    .post('newPartner/partnerRegisteration', {
+        name : user.name,
+        phone : user.phone,
+        email : user.email,
+        city : user.city,
+        pincode : user.pincode,
+        state : user.state,
+        service : user.service
+    })
+    .then(res=>{
+        console.log('Partner regis Info Sended')
+        return res.data
+    }).
+    catch(err=>console.log(err + " from sending partner regis info"))
+}
