@@ -21,6 +21,8 @@ class Partner extends Component {
             <Form.Control type="email" placeholder="Enter email" required />
             <Form.Label>City</Form.Label>
             <Form.Control type="text" placeholder="Enter City" required />
+            <Form.Label>Pincode</Form.Label>
+            <Form.Control type="text" placeholder="Enter City Pincode" required />
             <Form.Label>State</Form.Label>
             <Form.Control type="text" placeholder="Enter State" required />
             <Form.Label>Your Service</Form.Label>

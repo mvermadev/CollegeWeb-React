@@ -26,3 +26,18 @@ export const OtpAuth = user=>{
     }).
     catch(err=>console.log(err+" from verifiying OTP"))
 }
+
+export const contactInfo = user => {
+    return axios
+    .post('ask/query', {
+        name: user.name,
+        email : user.email,
+        phone : user.phone,
+        message : user.message
+    })
+    .then(res=>{
+        console.log('Contact Info Sended')
+        return res.data
+    }).
+    catch(err=>console.log(err + " from sending contact info"))
+}
