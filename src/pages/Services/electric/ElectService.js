@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import {Container, Row, Col, Image} from 'react-bootstrap'
-import './Service.css'
-import { Link } from 'react-router-dom';
+import React, { Component, useState } from 'react';
+import {Container, Row, Col, Image, Button} from 'react-bootstrap'
+import '../Services.css'
+import { Link, withRouter } from 'react-router-dom';
 
-class TopSer extends Component {
+class ElectService extends Component {
   constructor()
   {
       super();
@@ -12,14 +12,14 @@ class TopSer extends Component {
               {
                   id : 1,
                   url: 'https://cdn3.iconfinder.com/data/icons/real-estate-v-1/64/Real_estate-40-512.png',
-                  alt: 'Electrical Appliances',
-                  link: '/electricalServices'
+                  alt: 'Air Conditioner',
+                  link: '/BookElectService'
               },
               {
                   id : 2,
-                  url: 'https://cdn0.iconfinder.com/data/icons/tourism-and-outdoor-recreation-6/512/429_hotel__building_service_home-512.png',
-                  alt: 'Electrical Appliances',
-                  link: '/electricalServices'
+                  url: 'https://cdn1.iconfinder.com/data/icons/electricity-stuff/512/19_Electrical_Wiring-512.png',
+                  alt: 'Wiring',
+                  link: '/Wiring'
               },
               {
                 id: 3,
@@ -51,20 +51,23 @@ class TopSer extends Component {
     render() { 
         return ( 
             <div className="Service">
-            <p>TOP SERVICES</p>
+            <p>Appliances Services</p>
             <div className="items">
             {
                 this.state.service.map((ser)=>{
                     return (
-                           <Link to={ser.link}> <img  key={ser.id} src={ser.url} alt={ser.alt}/></Link>
-                            )
+                      <div key={ser.id}>
+                      <Link to={ser.link}> <img src={ser.url} alt={ser.alt}/></Link>
+                      </div>
+                      )
                         })
                     }
                     </div>
-            
             </div>
             );
         }
     }
+
     
-export default TopSer;
+
+export default ElectService;

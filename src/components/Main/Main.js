@@ -21,7 +21,13 @@ import HappinessGur from '../../pages/HappinessGur/HappinessGur'
 import About from '../../pages/About/About'
 import Services from '../../pages/Services/Services';
 import Contact from '../../pages/Contact/Contact';
-
+import ElectService from '../../pages/Services/electric/ElectService';
+import BookElectService from '../../pages/Services/electric/Book/BookElectService'; 
+import Wiring from '../../pages/Services/electric/SubService/Wiring'; 
+import AcService from '../../pages/Services/electric/SubService/AcService';
+import Fan from '../../pages/Services/electric/SubService/Fan';
+import Refri from '../../pages/Services/electric/SubService/Refri';
+import RestService from '../../pages/Services/electric/SubService/RestService';
 
 const MainCompo = ()=>{
     return(
@@ -78,6 +84,13 @@ class Main extends Component {
         <Route path="/about" component={About}/>
         <Route path="/services" component={Services}/>
         <Route path="/contact" component={Contact}/>
+        <Route path="/electricalServices" component={ElectService}/>
+        <Route path="/bookElectrician" component={BookElectService}/>
+        <Route path="/wiring" component={Wiring}/>
+        <Route path="/ac" component={AcService}/>
+        <Route path="/fan" component={Fan}/>
+        <Route path="/refrigerator" component={Refri}/>
+        <Route path="/restService" component={RestService}/>
         </Switch>
         </main>
         </div>
