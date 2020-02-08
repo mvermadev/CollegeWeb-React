@@ -22,12 +22,12 @@ import About from '../../pages/About/About'
 import Services from '../../pages/Services/Services';
 import Contact from '../../pages/Contact/Contact';
 import ElectService from '../../pages/Services/electric/ElectService';
-import BookElectService from '../../pages/Services/electric/Book/BookElectService'; 
 import Wiring from '../../pages/Services/electric/SubService/Wiring'; 
 import AcService from '../../pages/Services/electric/SubService/AcService';
 import Fan from '../../pages/Services/electric/SubService/Fan';
 import Refri from '../../pages/Services/electric/SubService/Refri';
 import RestService from '../../pages/Services/electric/SubService/RestService';
+import BookService from '../../pages/Services/electric/Book/BookService';
 
 const MainCompo = ()=>{
     return(
@@ -85,7 +85,7 @@ class Main extends Component {
         <Route path="/services" component={Services}/>
         <Route path="/contact" component={Contact}/>
         <Route path="/electricalServices" component={ElectService}/>
-        <Route path="/bookElectrician" component={BookElectService}/>
+        <Route path="/bookService/:serviceName" component={BookService}/>
         <Route path="/wiring" component={Wiring}/>
         <Route path="/ac" component={AcService}/>
         <Route path="/fan" component={Fan}/>

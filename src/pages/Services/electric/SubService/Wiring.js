@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Button} from 'react-bootstrap'
+import {Link, useLocation} from 'react-router-dom'
 import './SubService.css'
 
 class Wiring extends Component {
@@ -31,7 +32,7 @@ class Wiring extends Component {
                     <p>SUB TOTAL:</p>  
                   <h5>Rs. 150 + On Inspection</h5>
                   </div>
-                  <Button className="btn btn-success mt-3 btn">BOOK NOW!</Button> <hr/>
+                <Link to="/bookService/Wiring">  <Button className="btn btn-success mt-3 btn">BOOK NOW!</Button></Link> <hr/>
                   <p>{content.Desc}</p>
                   </div>
                 )
