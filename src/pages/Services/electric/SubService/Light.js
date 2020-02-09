@@ -3,7 +3,7 @@ import {Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import './SubService.css'
 
-class Fan extends Component {
+class Light extends Component {
   constructor()
   {
     super();
@@ -11,8 +11,8 @@ class Fan extends Component {
       contents : [
         {
         id: 1,
-        img : 'https://cdn3.iconfinder.com/data/icons/shoppy-outline-vol-1/512/1_fan_ceiling-fan_cooler-512.png',
-        text: 'Fan Service',
+        img : 'https://cdn2.iconfinder.com/data/icons/education-part-5/33/light-512.png',
+        text: 'Light Service',
         Desc : "Our service provider is highly competent personality to do your work properly."
       }
     ]
@@ -32,7 +32,7 @@ class Fan extends Component {
                   <p>SUB TOTAL:</p>  
                 <h5>Rs. 150 + On Inspection</h5>
                 </div>
-              <Link to="/confirmService/Fan">  <Button className="btn btn-success mt-3 btn">BOOK NOW!</Button></Link> <hr/>
+              <Link to="/confirmService/Light">  <Button className="btn btn-success mt-3 btn">BOOK NOW!</Button></Link> <hr/>
                 <p>{content.Desc}</p>
                 </div>
               )
@@ -43,4 +43,4 @@ class Fan extends Component {
   }
   }
    
-export default Fan
+export default Light

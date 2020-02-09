@@ -32,7 +32,7 @@ class Wiring extends Component {
                     <p>SUB TOTAL:</p>  
                   <h5>Rs. 150 + On Inspection</h5>
                   </div>
-                <Link to="/bookService/Wiring">  <Button className="btn btn-success mt-3 btn">BOOK NOW!</Button></Link> <hr/>
+                <Link to="/confirmService/Wiring">  <Button className="btn btn-success mt-3 btn">BOOK NOW!</Button></Link> <hr/>
                   <p>{content.Desc}</p>
                   </div>
                 )

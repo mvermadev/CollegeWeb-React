@@ -24,21 +24,24 @@ class Otp extends Component {
     onSubmit(e)
     {
         e.preventDefault()
-
         const authCode = {
             otp : this.state.otp
         }
 
-        OtpAuth(authCode).then(res=>{
-            if(res)
+        OtpAuth(authCode).then(()=>{
+            if(localStorage.userToken == authCode.otp)
             {
-                console.log('err in otp auth from Otp.js')
+                this.props.history.push('/');
             }
             else
             {
-                this.props.history.push('/')
+                alert("Enter correct OTP.")
+                
             }
         })
+
+
+
     }
 
     render() { 

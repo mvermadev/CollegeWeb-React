@@ -28,6 +28,9 @@ import Fan from '../../pages/Services/electric/SubService/Fan';
 import Refri from '../../pages/Services/electric/SubService/Refri';
 import RestService from '../../pages/Services/electric/SubService/RestService';
 import BookService from '../../pages/Services/electric/Book/BookService';
+import ConfirmService from '../../pages/Services/electric/Book/ConfirmService';
+import FinalDetails from '../../pages/Services/electric/Book/FinalDetails';
+import Light from '../../pages/Services/electric/SubService/Light';
 
 const MainCompo = ()=>{
     return(
@@ -86,10 +89,13 @@ class Main extends Component {
         <Route path="/contact" component={Contact}/>
         <Route path="/electricalServices" component={ElectService}/>
         <Route path="/bookService/:serviceName" component={BookService}/>
+        <Route path="/confirmService/:serviceType" component={ConfirmService}/>
+        <Route path="/finalDetails/:serviceValue" component={FinalDetails}/>
         <Route path="/wiring" component={Wiring}/>
         <Route path="/ac" component={AcService}/>
         <Route path="/fan" component={Fan}/>
         <Route path="/refrigerator" component={Refri}/>
+        <Route path="/light" component={Light}/>
         <Route path="/restService" component={RestService}/>
         </Switch>
         </main>

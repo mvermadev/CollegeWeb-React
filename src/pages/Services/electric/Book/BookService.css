@@ -1,0 +1,81 @@
+
+.BookService{
+    margin: 15px;
+    box-shadow: 0px 0px 10px grey;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+
+.ConfirmService .instruction{
+    font-weight: bold;
+}
+
+.ConfirmService .serviceDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    box-shadow: 0px 0px 10px silver;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.ConfirmService .serviceDetails Button{
+    height: 40px;
+}
+
+.ConfirmService .serviceDetails .serviceName p{
+    opacity: 0.7;
+}
+
+.ConfirmService .payDetails {
+    margin: 5px;
+    box-shadow: 0px 0px 10px silver;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.ConfirmService .payDetails .payInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ConfirmService .payDetails .checkForm{
+    font-size: 16px;
+}
+
+.FinalDetails{
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 0px 10px silver;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.FinalDetails img {
+    width: 25%;
+}
+
+.userDetails{
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.userDetails .detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(211, 209, 209);
+}
+
+.userDetails .detail p{
+    padding: 10px 10px 0px 10px;
+}

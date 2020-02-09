@@ -13,7 +13,7 @@ class ElectService extends Component {
                   id : 1,
                   url: 'https://cdn3.iconfinder.com/data/icons/real-estate-v-1/64/Real_estate-40-512.png',
                   alt: 'Air Conditioner',
-                  link: '/BookElectService'
+                  link: '/ac'
               },
               {
                   id : 2,
@@ -23,27 +23,27 @@ class ElectService extends Component {
               },
               {
                 id: 3,
-                url: 'https://cdn1.iconfinder.com/data/icons/online-teaching-and-school/512/Painting-512.png',
-                alt: 'Painting Service',
-                link: '/electricalServices'
+                url: 'https://cdn3.iconfinder.com/data/icons/shoppy-outline-vol-1/512/1_fan_ceiling-fan_cooler-512.png',
+                alt: 'Fans',
+                link: '/fan'
               },
               {
                 id: 4,
-                url: 'https://cdn3.iconfinder.com/data/icons/real-estate-v-1/64/Real_estate-19-512.png',
-                alt: 'Plumbing Service',
-                link: '/electricalServices'
+                url: 'https://cdn1.iconfinder.com/data/icons/electronic-filled-outline/64/ELECTRONICS_filled_outline-01-512.png',
+                alt: 'Refrigerator',
+                link: '/refrigerator'
               },
               {
                 id: 5,
-                url: 'https://cdn4.iconfinder.com/data/icons/health-beauty-spa-salon-and-fashion/49/29-512.png',
-                alt: 'Salon Service',
-                link: '/electricalServices'
+                url: 'https://cdn2.iconfinder.com/data/icons/education-part-5/33/light-512.png',
+                alt: 'Light',
+                link: '/light'
               },
               {
                 id: 6,
-                url: 'https://cdn4.iconfinder.com/data/icons/alarm-system-true-line-color/32/disinsection-disinsectization-pest-control-512.png',
-                alt: 'Pest Control',
-                link: '/electricalServices'
+                url: 'https://cdn3.iconfinder.com/data/icons/emoticon-emoji-1/50/Confused-512.png',
+                alt: 'Other',
+                link: '/restService'
               },
           ]
       }

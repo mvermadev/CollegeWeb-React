@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {useHistory} from 'react-router-dom';
 
 export const register = newUser=>{
     return axios
@@ -20,11 +21,15 @@ export const OtpAuth = user=>{
     })
     .then(res=>{
         console.log('Genuine OTP')
-        localStorage.setItem('userToken', user.otp);
         console.log('userToken : ', user.otp);
+        localStorage.setItem('userToken', user.otp);
+        console.log('res data : ', res.data);
         return res.data;
     }).
-    catch(err=>console.log(err+" from verifiying OTP"))
+    catch(err=>{
+        console.log(err+" from verifiying OTP");
+
+    })
 }
 
 export const contactInfo = user => {
@@ -58,4 +63,24 @@ export const partnerRegisInfo = user => {
         return res.data
     }).
     catch(err=>console.log(err + " from sending partner regis info"))
+}
+
+export const serviceAddInfo = user => {
+    return axios
+    .post('/getDetail/serviceAddress', {
+        name : user.name,
+        email : user.email,
+        phone : user.phone,
+        address : user.address,
+        city : user.city,
+        pincode : user.pincode,
+        state : user.state,
+        place : user.place,
+        serviceType : user.serviceType,
+    })
+    .then(res=>{
+        console.log('book service Info Sended')
+        return res.data
+    }).
+    catch(err=>console.log(err + " from sending book service info"))
 }

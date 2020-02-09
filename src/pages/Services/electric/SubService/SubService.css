@@ -1,5 +1,5 @@
 .SubService .product img{
-    width: 100vw;
+    width: 50%;
     height: 25vh;
 }
 
@@ -8,10 +8,12 @@
     padding: 10px;
     border-radius: 7px;
     font-size: 15px;
+    background-color: #fff;
 }
 
 
 .SubService .product .price{
+    background-color: #fff;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
