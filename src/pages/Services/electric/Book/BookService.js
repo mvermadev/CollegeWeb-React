@@ -18,7 +18,8 @@ function BookService(){
       pincode : '',
       state : '',
       place : '',
-      serviceType : ''
+      serviceType : '',
+      referenceNo: ''
     });
 
     const updateField=e=>{
@@ -32,6 +33,8 @@ function BookService(){
       
       e.preventDefault();
 
+      const refvalue = "sb"+Math.floor(Math.random() * 100000);
+
       const serData = {
         name : form.name,
         email : form.email,
@@ -41,10 +44,12 @@ function BookService(){
         pincode : form.pincode,
         state : form.state,
         place : form.place,
-        serviceType : serviceName
+        serviceType : serviceName,
+        referenceNo: refvalue
       }
      
       serviceAddInfo(serData).then(()=>{
+        localStorage.setItem("refNo", refvalue);
         history.push(myService)
       })
 
@@ -69,7 +74,7 @@ function BookService(){
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" name="email" value={form.email} onChange={updateField} />
+            <Form.Control type="email" placeholder="Enter email (OPTIONAL)" name="email" value={form.email} onChange={updateField} />
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
             <Form.Label>Contact No.</Form.Label>
@@ -132,19 +137,19 @@ function BookService(){
         type="radio"
         label="HOME"
         name="place"
-        id="formHorizontalRadios1" value={form.place} onChange={updateField}
+        id="formHorizontalRadios1" value="home" onChange={updateField}
       />
       <Form.Check className="ml-2"
         type="radio"
         label="OFFICE"
         name="place"
-        id="formHorizontalRadios2" value={form.place} onChange={updateField}
+        id="formHorizontalRadios2" value="office" onChange={updateField}
       />
       <Form.Check className="ml-2"
         type="radio"
         label="OTHER"
         name="place"
-        id="formHorizontalRadios3" value={form.place} onChange={updateField}
+        id="formHorizontalRadios3" value="other" onChange={updateField}
       />
     </Row>
   </Form.Group>
