@@ -4,8 +4,9 @@
   left: 0;
   width: 100%;
   background: #521751;
-  height: 56px;
+  line-height: 35px;
   box-shadow: 0px 0px 10px gray;
+  border-top: 5px solid #028f7c;
 }
 
 .toolbar__navigation {
@@ -13,6 +14,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 1rem;
+}
+
+.leftSide{
+  position: relative;
+  top: 7px;
 }
 
 .toolbar__logo p{
@@ -25,6 +31,11 @@
   color: white;
   text-decoration: none;
   
+}
+
+.toolbar_navigation-items img{
+  width: 40px;
+  height: 40px;
 }
 
 .toolbar_navigation-items Link:hover,

@@ -17,6 +17,7 @@ class Partner extends Component {
         pincode : '',
         state : '',
         service : '',
+        partnerId : ''
       }
   
       this.onChange = this.onChange.bind(this);
@@ -30,6 +31,8 @@ class Partner extends Component {
     {
       e.preventDefault();
   
+      const refvalue = "pi"+Math.floor(Math.random() * 100000);
+
       const partnerData = {
         name : this.state.name,
         phone : this.state.phone,
@@ -37,7 +40,8 @@ class Partner extends Component {
         city : this.state.city,
         pincode : this.state.pincode,
         state : this.state.state,
-        service : this.state.service
+        service : this.state.service,
+        partnerId: refvalue
       }
   
       partnerRegisInfo(partnerData).then(res=>{
@@ -72,6 +76,7 @@ class Partner extends Component {
             </Form.Group>
             <Button variant="warning btn btn-block" type="submit">REGISTER</Button>
             </Form>
+            <Link to="/partnerLogin"><Button variant="info btn btn-block" className="mt-2">Partner Login</Button></Link>
             </div>
             </div>
             );

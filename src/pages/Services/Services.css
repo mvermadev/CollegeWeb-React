@@ -22,4 +22,6 @@
 .Services .items img{
     width: 100px;
     height: 100px;
+    box-shadow: none;
+    border: none;
 }

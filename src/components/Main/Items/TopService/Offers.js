@@ -9,8 +9,8 @@ class Offers extends Component {
             <div className="Service">
             <p>OFFERS</p>
             <div className="items">
-            <img src="https://5.imimg.com/data5/BM/AK/MY-6420141/solid-color-aluminium-composite-panel-209-refreshing-green-500x500.jpg" alt=""/>
-            <img src="https://5.imimg.com/data5/BM/AK/MY-6420141/solid-color-aluminium-composite-panel-209-refreshing-green-500x500.jpg" alt=""/>
+            <img src="https://cdn4.iconfinder.com/data/icons/online-store-10/32/43_offer_badge_star_label_offers_discount_shopping-512.png" alt=""/>
+            <img src="https://cdn2.iconfinder.com/data/icons/shopping-ii/110/Stickers-32-512.png" alt=""/>
             </div>
             </div>
             );

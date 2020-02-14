@@ -13,7 +13,8 @@ function BookService(){
       name : '',
       email : '',
       phone : '',
-      address : '',
+      address1 : '',
+      address2 : '',
       city : '',
       pincode : '',
       state : '',
@@ -38,8 +39,9 @@ function BookService(){
       const serData = {
         name : form.name,
         email : form.email,
-        phone : form.pincode,
-        address : form.address,
+        phone : form.phone,
+        address1 : form.address1,
+        address2 : form.address2,
         city : form.city,
         pincode : form.pincode,
         state : form.state,
@@ -83,7 +85,8 @@ function BookService(){
 
         <Form.Group controlId="exampleForm.ControlTextarea1">
         <Form.Label>Enter Address</Form.Label>
-        <Form.Control as="textarea" rows="3" value={form.address} name="address" onChange={updateField} />
+        <Form.Control type="text" placeholder="Address 1" name="address1" value={form.address1} onChange={updateField} />
+        <Form.Control className="mt-2" type="text" placeholder="Address 2" name="address2" value={form.address2} onChange={updateField} />
       </Form.Group>
       
       <Form.Group controlId="formBasicEmail">

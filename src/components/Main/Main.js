@@ -31,6 +31,13 @@ import BookService from '../../pages/Services/electric/Book/BookService';
 import ConfirmService from '../../pages/Services/electric/Book/ConfirmService';
 import FinalDetails from '../../pages/Services/electric/Book/FinalDetails';
 import Light from '../../pages/Services/electric/SubService/Light';
+import PartLogin from '../../pages/Registeration/Partner/PartLogin';
+import PartOtp from '../../pages/Registeration/Partner/PartOtp';
+import PartProfile from '../../pages/Registeration/Partner/PartProfile';
+import EditProfile from '../../pages/Registeration/Partner/EditProfile';
+import userProfile from '../../pages/Registeration/UserAccount/UserProfile';
+import UserRegis from '../../pages/Registeration/UserAccount/UserRegis';
+import ViewOrders from '../../pages/Registeration/UserAccount/ViewOrders';
 
 const MainCompo = ()=>{
     return(
@@ -73,10 +80,10 @@ class Main extends Component {
         return (
         <Router>
         <div style={{height: '100%'}}  id="main" >
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{marginTop: '64px'}}>
+        <main style={{marginTop: '60px'}}>
         <Switch>
         <Route path="/" exact component={MainCompo}/>
         <Route path="/login" component={Login}/>
@@ -97,6 +104,13 @@ class Main extends Component {
         <Route path="/refrigerator" component={Refri}/>
         <Route path="/light" component={Light}/>
         <Route path="/restService" component={RestService}/>
+        <Route path="/partnerLogin" component={PartLogin}/>
+        <Route path="/partnerOtp" component={PartOtp}/>
+        <Route path="/partnerProfile" component={PartProfile}/>
+        <Route path="/editProfile/:fromWhere/:field/:oldValue" component={EditProfile}/>
+        <Route path="/userProfile" component={userProfile}/>
+        <Route path="/userRegistration" component={UserRegis}/>
+        <Route path="/myOrders" component={ViewOrders}/>
         </Switch>
         </main>
         </div>

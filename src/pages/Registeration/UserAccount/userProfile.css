@@ -1,0 +1,45 @@
+.userProfile .profileImg{
+    /* background-color: #521751; */
+    background-color: #028f7c;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.userProfile .profileImg img{
+    width: 25%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.userProfile .detail{
+    background-color: #fff;
+    padding: 15px;
+    line-height: 0;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 1px 0px 7px silver;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.userProfile .detail p:first-child{
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.UserRegis{
+    margin: 15px;
+    box-shadow: 0px 0px 10px grey;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.ViewOrder .order{
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px silver;
+    background-color: #fff;
+    padding: 5px;
+}

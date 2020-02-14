@@ -9,10 +9,10 @@ class HomeSer extends Component {
             <div className="Service">
             <p>HOME SERVICES</p>
             <div className="items">
-            <img src="https://5.imimg.com/data5/BM/AK/MY-6420141/solid-color-aluminium-composite-panel-209-refreshing-green-500x500.jpg" alt=""/>
-            <img src="https://5.imimg.com/data5/BM/AK/MY-6420141/solid-color-aluminium-composite-panel-209-refreshing-green-500x500.jpg" alt=""/>
-            <img src="https://5.imimg.com/data5/BM/AK/MY-6420141/solid-color-aluminium-composite-panel-209-refreshing-green-500x500.jpg" alt=""/>
-            <img src="https://5.imimg.com/data5/BM/AK/MY-6420141/solid-color-aluminium-composite-panel-209-refreshing-green-500x500.jpg" alt=""/>
+            <img src="https://cdn2.iconfinder.com/data/icons/maids-and-cleaning-1/64/Party_help-cleaning-512.png" alt=""/>
+            <img src="https://cdn2.iconfinder.com/data/icons/cleaning-flat/64/bucket-wash-cleaning-512.png" alt=""/>
+            <img src="https://cdn2.iconfinder.com/data/icons/farm-filled-outline/64/mop-bucket-cleaning-512.png" alt=""/>
+            <img src="https://cdn1.iconfinder.com/data/icons/cleaning-contempo-volume-1/256/Furniture_Cleaning-512.png" alt=""/>
             </div>
             </div>
             );

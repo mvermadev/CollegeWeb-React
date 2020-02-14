@@ -19,3 +19,38 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.profileImg img{
+    width: 40%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partnerDetails .detail {
+    border-radius: 7px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px silver;
+    margin: 10px;
+}
+
+.partnerDetails .detail p{
+    padding: 5px;
+}
+
+.partnerDetails .detail p:first-child{
+    border-bottom: 1px solid gray;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.partnerDetails .detail p:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+}

@@ -71,7 +71,8 @@ export const serviceAddInfo = user => {
         name : user.name,
         email : user.email,
         phone : user.phone,
-        address : user.address,
+        address1 : user.address1,
+        address2 : user.address2,
         city : user.city,
         pincode : user.pincode,
         state : user.state,
@@ -84,4 +85,17 @@ export const serviceAddInfo = user => {
         return res.data
     }).
     catch(err=>console.log(err + " from sending book service info"))
+}
+
+export const userRegisInfo = user => {
+    return axios
+    .post(`/userDetails/addUser/${user.userId}/${user.name}/${user.email}/${user.phone}`, {
+    })
+    .then((res)=>{
+        console.log('user regis Info Sended')
+        return res.data
+    }).
+    catch((err)=>{
+        console.log(err + " from sending user regis info")
+    })
 }

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import {Form, Button} from 'react-bootstrap';
 import {Route, Redirect, Link, useHistory, useLocation} from 'react-router-dom';
-import {register} from '../UserFunction';
-import './Login.css'
+import {register} from '../../UserFunction';
+import '../Login.css'
 
 // Must Add Validation.
-class Login extends Component {
+class PartLogin extends Component {
     constructor()
     {
         super()
@@ -29,6 +29,7 @@ class Login extends Component {
         const user = {
             email : this.state.email
         }
+
         
         register(user).then(res=>{
             if(res)
@@ -39,25 +40,29 @@ class Login extends Component {
                 // useLocation.push('/auth');
                 // useHistory.push('/auth');
                 console.log("successfully registered.")
+                localStorage.setItem('partId', user.email);
             }
             else{
-                localStorage.setItem('userId', user.email)
-                this.props.history.push('/auth');
+                localStorage.setItem('partId', user.email);
+                this.props.history.push('/partnerOtp');
                 console.log('Err to register');
             }
         })
     }
 
     componentDidMount(){
-        if(localStorage.partAuth){
+            localStorage.removeItem('userAuth')
+            localStorage.removeItem('userId')
             localStorage.removeItem('partAuth')
-        }
+            localStorage.removeItem('partId')
     }
+
 
     render() { 
         return ( 
             <div className="Login">
             <div className="loginForm">
+            <h5 className="text-center" style={{color: '#028f7c', position: 'relative', bottom: '10px'}}>Partner Login</h5>
             <Form onSubmit={this.onSubmit}>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -67,11 +72,12 @@ class Login extends Component {
             </Form.Text>
             </Form.Group>
             <Button variant="warning btn btn-block" type="submit">Get OTP</Button> 
-            </Form> 
+            </Form>
             </div>
             </div>
             );
         }
     }
-    
-export default Login;
+
+
+export default PartLogin;
