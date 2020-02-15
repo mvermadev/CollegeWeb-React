@@ -56,7 +56,7 @@ class TopSer extends Component {
             {
                 this.state.service.map((ser)=>{
                     return (
-                           <Link to={ser.link}> <img  key={ser.id} src={ser.url} alt={ser.alt}/></Link>
+                           <Link to={ser.link} key={ser.id}> <img src={ser.url} alt={ser.alt}/></Link>
                             )
                         })
                     }

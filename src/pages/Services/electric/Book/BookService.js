@@ -59,7 +59,7 @@ function BookService(){
 
 
     useEffect(()=>{
-      if(!localStorage.userToken)
+      if(!(localStorage.userAuth))
       {
         alert('Login First')
         history.push('/')

@@ -44,7 +44,7 @@ function FinalDetails(){
     
     useEffect(()=>{
         getBookData();
-        if(!localStorage.userToken)
+        if(!localStorage.userAuth)
         {
             alert('Login First')
             history.push('/')
