@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import {Container, Row, Col, Image} from 'react-bootstrap'
-import './Service.css'
+import '../Services.css'
 
 
-class SalonSer extends Component {
+class SalonServices extends Component {
     constructor()
     {
         super();
@@ -63,4 +63,4 @@ class SalonSer extends Component {
           }
       }
     
-export default SalonSer;
+export default SalonServices;

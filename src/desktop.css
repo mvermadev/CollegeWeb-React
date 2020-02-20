@@ -1,0 +1,15 @@
+@media only screen and (min-width: 500px)
+{
+    /* All Service in Main Page. */
+    .Service .items{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: center;
+
+    }
+    .Service .items img{
+        width: auto;
+    }
+
+}

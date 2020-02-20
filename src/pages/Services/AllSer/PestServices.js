@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap'
-import './Service.css'
+import '../Services.css'
 import {Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-class PestSer extends Component {
+class PestServices extends Component {
     constructor()
     {
         super();
@@ -58,12 +58,9 @@ class PestSer extends Component {
                           })
                       }
                       </div>
-                <div className="container mt-2">
-                <Link to="/services"><Button variant="success" className="center btn-block">MORE SERVICES</Button></Link>
-                </div>
               </div>
               );
           }
       }
     
-export default PestSer;
+export default PestServices;

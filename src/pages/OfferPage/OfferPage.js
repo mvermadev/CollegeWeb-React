@@ -27,18 +27,20 @@ class OfferPage extends Component {
     }
     render() { 
         return ( 
-            <div className="OfferPage">
+            <div className="text-center">
             <h4>GREAT OFFERS</h4>
+            <div className="OfferPage">
             {
                 this.state.cardImg.map((img)=>{
-                   return(
-                   <div className='items' key={img.id}>
-                   <Link to='/'> <img src={img.url} alt="card"/>
-                    <p>{img.text}</p> </Link>
-                    </div> 
-                   )
-                })
-            }  
+                    return(
+                        <div className='items' key={img.id}>
+                        <Link to='/'> <img src={img.url} alt="card"/> </Link>
+                        <p>{img.text}</p> 
+                        </div> 
+                        )
+                    })
+                }  
+            </div>
           
             </div>
          );

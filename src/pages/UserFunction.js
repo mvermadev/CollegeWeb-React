@@ -78,6 +78,7 @@ export const serviceAddInfo = user => {
         state : user.state,
         place : user.place,
         serviceType : user.serviceType,
+        subService : user.subService,
         referenceNo : user.referenceNo,
     })
     .then(res=>{

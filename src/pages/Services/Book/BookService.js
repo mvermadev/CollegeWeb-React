@@ -1,13 +1,13 @@
 import React, { Component, useEffect, useState } from 'react';
 import {useParams, useHistory, Link} from 'react-router-dom';
 import {Form, Button, Col, Row} from 'react-bootstrap'
-import {serviceAddInfo} from '../../../UserFunction';
+import {serviceAddInfo} from '../../UserFunction';
 import './BookService.css'
 
 function BookService(){
     const history = useHistory();
-    const {serviceName} = useParams();
-    const myService = "/finalDetails/"+serviceName;
+    const {serviceName, subService} = useParams();
+    const myService = "/finalDetails/"+serviceName+'/'+subService;
 
     const [form, setState] = useState({
       name : '',
@@ -20,6 +20,7 @@ function BookService(){
       state : '',
       place : '',
       serviceType : '',
+      subService : '',
       referenceNo: ''
     });
 
@@ -47,6 +48,7 @@ function BookService(){
         state : form.state,
         place : form.place,
         serviceType : serviceName,
+        subService : subService,
         referenceNo: refvalue
       }
      
@@ -68,7 +70,7 @@ function BookService(){
 
     return(
         <div className="BookService">
-            <p className="text-center">Enter Details, to get {serviceName} service.</p> <hr/>
+            <p className="text-center">Enter Details, to get {serviceName} {subService} service.</p> <hr/>
         <Form method="POST" onSubmit={finalStep}>
         <Form.Group controlId="formBasicEmail">
             <Form.Label>Contact Name</Form.Label>
@@ -157,11 +159,11 @@ function BookService(){
     </Row>
   </Form.Group>
     <Form.Text className="text-muted">
-    We'll never share your email with anyone else.
+    We'll never share your info with anyone else.
     </Form.Text>
-        <Button variant="success" className="btn mt-2 text-center" type="submit">
-            BOOK
-        </Button> 
+    <div className="text-center">
+    <Button variant="success" className="btn-block rounded mt-2" type="submit">BOOK</Button> 
+    </div>
         </Form>
         </div>
     )

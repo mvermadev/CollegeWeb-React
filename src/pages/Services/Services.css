@@ -25,3 +25,20 @@
     box-shadow: none;
     border: none;
 }
+
+@media only screen and (min-width: 500px)
+{
+ 
+    /* Services.js Page */
+    .Services {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Services .items img{
+        width: 150px;
+        height: 150px;
+    }
+}

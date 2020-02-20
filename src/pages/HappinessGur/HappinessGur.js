@@ -27,19 +27,20 @@ class HappinessGur extends Component {
     }
     render() { 
         return ( 
-            <div className="Happiness">
+            <div className="text-center">
             <h4>happiness Guranteed</h4>
+            <div className="Happiness">
             {
                 this.state.cardImg.map((img)=>{
-                   return(
-                   <div className='items' key={img.id}>
-                   <Link to='/'> <img src={img.url} alt="card"/>
-                    <p>{img.text}</p> </Link>
-                    </div> 
-                   )
-                })
-            }  
-          
+                    return(
+                        <div className='items' key={img.id}>
+                        <Link to='/'> <img src={img.url} alt="card"/>  </Link>
+                        <p>{img.text}</p>
+                        </div> 
+                        )
+                    })
+                }  
+            </div>
             </div>
          );
     }

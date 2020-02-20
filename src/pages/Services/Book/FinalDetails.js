@@ -5,10 +5,11 @@ import './BookService.css'
 import { Button } from 'react-bootstrap';
 
 function FinalDetails(){
-    const {serviceValue} = useParams();
+    const {serviceValue, subService} = useParams();
     const history = useHistory();
     
     const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
     const [address1, setAddress1] = useState('');
     const [address2, setAddress2] = useState('');
     const [phone, setPhone] = useState('');
@@ -20,12 +21,13 @@ function FinalDetails(){
     
     const refVal = localStorage.refNo;
 
-    
+    // Retrieving recent booking data of user.
    const getBookData = () =>{
-        axios.get('/userDetails/retDetails/'+serviceValue+'/'+refVal)
+        axios.get('/userDetails/retDetails/'+subService+'/'+refVal)
         .then((res)=>{
             const data = res.data;
             setName(data.data[0].name);
+            setEmail(data.data[0].email);
             setPhone(data.data[0].phone);
             setCity(data.data[0].city);
             setPincode(data.data[0].pincode);
@@ -51,8 +53,10 @@ function FinalDetails(){
         }
     })
 
+
     const lastStage = ()=>{
-        axios.get(`/userDetails/specPartner/${name}/${address1}/${address2}/${city}/${pincode}/${custState}/${contact}/${serviceValue}`)
+        // Logic for sending email to specific service partner.
+        axios.get(`/userDetails/specPartner/${name}/${email}/${address1}/${address2}/${city}/${pincode}/${custState}/${contact}/${serviceValue}/${subService}`)
         .then(()=>{
             console.log('spec partner reponse')
             history.push('/');
@@ -64,10 +68,13 @@ function FinalDetails(){
     
     return(
         <div>
+        <div className="deskViewFinal">
+        
         <div className="FinalDetails">
         <img src="https://www.royallife.biz/images/checkmark.gif" alt="success Order" /> <hr/>
         <p>Dear Customer, Thank you for booking an {serviceValue} service on ServiceBird365. Please find your job details below. We will send you the service provider details soon.</p>
         </div>
+        <div className="rightViewFinal text-center">
         <div className="userDetails">
             <div className="detail">
                 <p>Reference No.</p>
@@ -91,7 +98,7 @@ function FinalDetails(){
             </div>
             <div className="detail">
                 <p>Services Opted.</p>
-                <p>Any {serviceValue} Work.</p>
+                <p>Any {subService} Work.</p>
             </div>
             <div className="detail">
                 <p>GST</p>
@@ -99,7 +106,9 @@ function FinalDetails(){
             </div>
             </div>
             <div className="container text-center">
-            <Button variant="success" className="btn-block" onClick={lastStage}>Confirm Booking</Button>
+            <Button variant="success" className="btn-block rounded" onClick={lastStage}>Confirm Booking</Button>
+            </div>
+            </div>
             </div>
 
             

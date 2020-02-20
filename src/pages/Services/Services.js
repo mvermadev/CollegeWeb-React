@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Services.css'
+import '../../desktop.css'
 
 class Services extends Component {
     constructor(props)

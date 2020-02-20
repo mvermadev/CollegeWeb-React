@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap'
-import './Service.css'
+import '../Services.css'
 import {Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-class PestSer extends Component {
+class PlumbServices extends Component {
     constructor()
     {
         super();
@@ -12,31 +12,31 @@ class PestSer extends Component {
             service : [
                 {
                     id : 1,
-                    url: 'https://cdn1.iconfinder.com/data/icons/malaria-illness-dengue-1/100/all8_09_15-512.png',
-                    alt: 'Dengue',
-                    text: 'Dengue',
-                    link: '/bookBegin/Pest Control/Dengue'
+                    url: 'https://cdn4.iconfinder.com/data/icons/energy-71/64/faucet-sink-water-drop-512.png',
+                    alt: 'Tap, Wash Basin',
+                    text: 'Tap, Wash Basin',
+                    link: '/bookBegin/Plumbing/Tap, Wash Basin'
                 },
                 {
                     id : 2,
-                    url: 'https://cdn1.iconfinder.com/data/icons/bugs-with-many-insect-inside-it-and-color-version/100/bugs_color-09-512.png',
-                    alt: 'Bed Bugs',
-                    text: 'Bed Bugs',
-                    link: '/bookBegin/Pest Control/Bed Bugs'
+                    url: 'https://cdn1.iconfinder.com/data/icons/plumber/64/29_pipe_leakage_plumber_plumbing_water-512.png',
+                    alt: 'Water leakage',
+                    text: 'Water leakage',
+                    link: '/bookBegin/Plumbing/Water leakage'
                 },
                 {
                   id: 3,
-                  url: 'https://cdn1.iconfinder.com/data/icons/insect-and-pest-control/500/Pest-insect-ban_6-512.png',
-                  alt: 'Mosquito',
-                  text: 'Mosquito',
-                  link: '/bookBegin/Pest Control/Mosquito'
+                  url: 'https://cdn0.iconfinder.com/data/icons/hygiene-12/64/sanitary-restroom-bathroom-toilet-512.png',
+                  alt: 'Toilet, Sanitary',
+                  text: 'Toilet, Sanitary',
+                  link: '/bookBegin/Plumbing/Toilet, Sanitary'
                 },
                 {
                   id: 4,
                   url: 'https://cdn3.iconfinder.com/data/icons/fintech-color-pop-vol-2/64/know-your-client-512.png',
                   alt: 'Other',
                   text: 'Other',
-                  link: '/bookBegin/Pest Control/Other'
+                  link: '/bookBegin/Plumbing/Other'
                 },
             ]
         }
@@ -45,7 +45,7 @@ class PestSer extends Component {
       render() { 
           return ( 
               <div className="Service">
-              <p>PEST CONTROL</p>
+              <p>PLUMBING SERVICES</p>
               <div className="items">
               {
                   this.state.service.map((ser)=>{
@@ -58,12 +58,9 @@ class PestSer extends Component {
                           })
                       }
                       </div>
-                <div className="container mt-2">
-                <Link to="/services"><Button variant="success" className="center btn-block">MORE SERVICES</Button></Link>
-                </div>
               </div>
               );
           }
       }
     
-export default PestSer;
+export default PlumbServices;

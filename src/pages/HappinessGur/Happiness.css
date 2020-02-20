@@ -17,3 +17,27 @@
     width: 100%;
     height: 200px;
 }
+
+
+@media only screen and (min-width: 500px)
+{
+ 
+    /* Services.js Page */
+    .Happiness{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Happiness .items{
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+
+    .Happiness .items img{
+        width: auto;
+        height: 200px;
+    }
+}

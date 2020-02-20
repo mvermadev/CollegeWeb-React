@@ -55,7 +55,7 @@ function ViewOrders()
         <div>
             <div className="container ViewOrder">
             <div className="order">
-                <h5>{service}</h5>
+                <h5>{service}</h5> <hr/>
                 <p>Ref No: {refNo}</p>
                 <p>Placed On: {created}</p>
                 <p>City: {city}</p>

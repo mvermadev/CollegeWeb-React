@@ -66,7 +66,7 @@ class PartLogin extends Component {
             <Form onSubmit={this.onSubmit}>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" required name="email" onChange={this.onChange} value={this.state.email}/>
+            <Form.Control type="email" placeholder="Enter email" autoFocus required name="email" onChange={this.onChange} value={this.state.email}/>
             <Form.Text className="text-muted">
             We'll never share your email with anyone else.
             </Form.Text>

@@ -17,3 +17,26 @@
     width: 100%;
     height: 200px;
 }
+
+@media only screen and (min-width: 500px)
+{
+ 
+    /* Services.js Page */
+    .OfferPage{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .OfferPage .items{
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+
+    .OfferPage .items img{
+        width: auto;
+        height: 200px;
+    }
+}

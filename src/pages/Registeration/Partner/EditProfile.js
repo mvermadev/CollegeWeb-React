@@ -154,7 +154,7 @@ function EditProfile(){
 
 
     return(
-        <div className="container">
+        <div className="container EditProfile">
         <Form method="POST" onSubmit={finalStep}>
 
         <Form.Group controlId="formBasicEmail">

@@ -44,11 +44,11 @@ class Otp extends Component {
 
     render() { 
         return ( 
-            <div className="container Login">
+            <div className="Login">
             <div className="loginForm">
             <Form onSubmit={this.onSubmit}>
             <Form.Group controlId="formBasicEmail">
-            <Form.Control type="number" name="otp" value={this.state.otp} placeholder="Enter OTP" required onChange={this.onChange} />
+            <Form.Control type="text" name="otp" value={this.state.otp} placeholder="Enter OTP" autoFocus required onChange={this.onChange} />
             </Form.Group>
             <Button variant="success btn btn-block" type="submit"> Get In! </Button>
             </Form>
