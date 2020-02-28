@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {withRouter, Link} from 'react-router-dom';
+import icon from '../Main/img/icon/sb1.png'
 
 import DrawerToggleButton from '../SideDrawer/drawerToggleButton';
 import './Toolbar.css';
@@ -7,10 +8,10 @@ import './Toolbar.css';
 class Toolbar extends Component {
 
   render() {
-    const yesUser = (
-      <div className="toolbar_navigation-items">
-      <p className="leftSide">Hello</p>
-      </div>
+      const yesUser = (
+        <div className="toolbar_navigation-items">
+        <p className="leftSide">Hello</p>
+        </div>
       );
 
       const noUser = (
@@ -26,7 +27,7 @@ class Toolbar extends Component {
       <div className="toolbar__toggle-button">
       <DrawerToggleButton click={this.props.drawerClickHandler} />
       </div>
-      <div className="toolbar__logo"><Link to="/"><p className="leftSide">E-services</p></Link></div>
+      <div className="toolbar__logo"><Link to="/"><p className="leftSide"><img src={icon} alt="logo"/></p></Link></div>
       
       {localStorage.userAuth ? yesUser : noUser}
       </nav>

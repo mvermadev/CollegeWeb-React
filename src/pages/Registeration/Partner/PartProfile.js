@@ -67,12 +67,12 @@ function PartProfile(){
 
 
     return(
-        <div className="container">
+        <div >
         <div className="profileImg">
         <img src="https://cdn3.iconfinder.com/data/icons/business-and-employment-2/48/laptop_profile_view_computer_information-512.png" alt="partner profile"/>
-        </div>
-        <div className="partnerDetails">
         <h5 className="text-center">Partner Profile</h5>
+        </div>
+        <div className="partnerDetails container">
             <div className="detail">
                 <p>Name</p>
                 <p>{name}

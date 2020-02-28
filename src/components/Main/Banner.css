@@ -1,5 +1,5 @@
 #banner{
-    background-image: url('./img/homepage.png');
+    background-image: url('./img/mhome2.jpg');
     background-attachment: fixed;
     width: 100%;
     background-repeat: no-repeat;
@@ -26,4 +26,11 @@
 #main{
     background-color: #faf2fa;
     height: 100vh;
+}
+
+@media only screen and (min-width: 500px)
+{
+    #banner{
+        background-image: url('./img/home2.jpg');
+    }
 }

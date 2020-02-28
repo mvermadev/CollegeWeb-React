@@ -10,7 +10,7 @@ class Banner extends Component {
         return ( 
           <div>
           <div className="banner" id="banner">
-          <h1>V</h1>
+          <h1 style={{color:'#fff'}}>V</h1>
           </div>
           </div>
          );

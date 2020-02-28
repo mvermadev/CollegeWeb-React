@@ -32,7 +32,7 @@ class Otp extends Component {
             if(localStorage.userToken == authCode.otp)
             {
                 localStorage.setItem('partAuth', authCode.otp);
-                this.props.history.push('/partnerProfile');
+                window.location.replace('/partnerProfile')
             }
             else
             {

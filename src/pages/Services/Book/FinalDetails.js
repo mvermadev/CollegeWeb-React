@@ -59,7 +59,8 @@ function FinalDetails(){
         axios.get(`/userDetails/specPartner/${name}/${email}/${address1}/${address2}/${city}/${pincode}/${custState}/${contact}/${serviceValue}/${subService}`)
         .then(()=>{
             console.log('spec partner reponse')
-            history.push('/');
+            // history.push('/');
+            window.location.replace('/')
         }).
         catch((err)=>{
             console.log('Error to retrieving spec partner data : ', err)

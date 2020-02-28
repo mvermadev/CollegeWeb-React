@@ -34,7 +34,7 @@ class sideDrawer extends Component {
       <div className="yesUserArea">
       <img className="userImg" src="https://cdn3.iconfinder.com/data/icons/universal-web-mobile-8/65/389-512.png" alt="user"/>
       <a href="/userProfile"><p>Hello</p></a>
-      <img onClick={this.logout} src="https://cdn4.iconfinder.com/data/icons/recreation-1/500/out-2-512.png" alt="logout"/>
+      <img onClick={this.logout} style={{cursor:'pointer'}} src="https://cdn4.iconfinder.com/data/icons/recreation-1/500/out-2-512.png" alt="logout"/>
       </div>
 
       );

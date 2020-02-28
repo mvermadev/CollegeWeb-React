@@ -6,6 +6,7 @@
     color: #ffffff;
 }
 
+
 .userProfile .profileImg img{
     width: 25%;
     border-radius: 50%;
@@ -21,6 +22,7 @@
     box-shadow: 1px 0px 7px silver;
     display: flex;
     justify-content: space-between;
+    border-top: 2px solid rgba(134, 134, 134, 0.993);
     align-items: center
 }
 
@@ -52,6 +54,7 @@
         width: 5%;
         border-radius: 20%;
     }
+
 
     .userProfile .detail{
         width: 50vw;

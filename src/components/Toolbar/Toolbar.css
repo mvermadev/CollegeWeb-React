@@ -21,6 +21,11 @@
   top: 7px;
 }
 
+.leftSide img{
+  width: 75px;
+  height: 35px;
+}
+
 .toolbar__logo p{
   color: white;
   text-decoration: none;
