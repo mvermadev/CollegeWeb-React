@@ -37,6 +37,7 @@ import EditProfile from '../../pages/Registeration/Partner/EditProfile';
 import userProfile from '../../pages/Registeration/UserAccount/UserProfile';
 import UserRegis from '../../pages/Registeration/UserAccount/UserRegis';
 import ViewOrders from '../../pages/Registeration/UserAccount/ViewOrders';
+import Feedback from '../../pages/Registeration/UserAccount/Feedback';
 
 const MainCompo = ()=>{
     return(
@@ -109,6 +110,7 @@ class Main extends Component {
         <Route path="/plumbServices" component={PlumbServices}/>
         <Route path="/salonServices" component={SalonServices}/>
         <Route path="/pestServices" component={PestServices}/>
+        <Route path="/feedback/:refNo/:name/:email/:serviceType" component={Feedback}/>
         </Switch>
         </main>
         </div>
