@@ -23,7 +23,7 @@ class Footer extends Component {
             </div>
             </div>
             <div className="cpy">
-                All reserved copyright©2020
+                All reserved copyright©2020.
             </div>
             </div>
          );

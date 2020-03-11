@@ -57,7 +57,7 @@ function ViewOrders()
             <div className="order">
                 <h5>{service}</h5> <hr/>
                 <p>Ref No: {refNo}</p>
-                <p>Placed On: {created}</p>
+                <p>Placed On: {created.slice(0,10)}</p>
                 <p>City: {city}</p>
                 <p>Contact Name: {name}</p>
             </div>
