@@ -10,7 +10,7 @@ class About extends Component {
                 <p>
                 Housejoy is a one-stop solution to sort all your home needs ranging from construction to maintenance, professionally and conveniently.
                 <br/><br/>
-                Our goal is to become India’s largest managed marketplace for construction and renovation. We will do this through a strong in-house team of architects, designers, project managers and relationship managers with over 35 years of combined experience in the construction industry and our strong technological foundation which will digitize the entire workflow from booking experience, design phase, documentation, project execution, quality checks, payment flow and final handover .
+                Our goal is to become India’s largest managed marketplace for construction and renovation. We will do this through a strong in-house team of architects, designers, project managers and relationship managers with over 35 years of combined experience in the construction industry and our strong technological foundation which will digitize the entire workflow from booking experience, design phase, documentation, project execution, quality checks, payment flow and final handover.
                 <br/><br/>
                 We serve over 7 major cities, with home construction projects covering Bangalore and Hyderabad. We promise highest standard quality, on-time project delivery, extended warranty and a hassle-free experience from plan approval to handover on all our construction projects to all our customers.
                 </p>

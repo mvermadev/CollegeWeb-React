@@ -15,12 +15,12 @@ class OfferPage extends Component {
                 {
                     id: 2,
                     url: 'https://rukminim1.flixcart.com/flap/500/500/image/14d80f.jpg?q=50',
-                    text: 'This is a Great Offers from us.This is a Great Offers from usThis is a Great Offers from usThis is a Great Offers from us'
+                    text: 'This is a Great Offers from us.This is a Great Offers from usThis is a Great Offers from usThis is a Great Offers from us.'
                 },
                 {
                     id: 3,
                     url: 'https://rukminim1.flixcart.com/flap/500/500/image/c3a4cc.jpg?q=50',
-                    text: 'This is a Great Offers from us.This is a Great Offers from usThis is a Great Offers from usThis is a Great Offers from us'
+                    text: 'This is a Great Offers from us.This is a Great Offers from usThis is a Great Offers from usThis is a Great Offers from us.'
                 }
             ]
         }
@@ -30,16 +30,16 @@ class OfferPage extends Component {
             <div className="text-center">
             <h4>GREAT OFFERS</h4>
             <div className="OfferPage">
-            {
-                this.state.cardImg.map((img)=>{
-                    return(
-                        <div className='items' key={img.id}>
-                        <Link to='/'> <img src={img.url} alt="card"/> </Link>
-                        <p>{img.text}</p> 
-                        </div> 
-                        )
-                    })
-                }  
+                {
+                    this.state.cardImg.map((img)=>{
+                        return(
+                            <div className='items' key={img.id}>
+                            <Link to='/'> <img src={img.url} alt="card"/> </Link>
+                            <p>{img.text}</p> 
+                            </div> 
+                            )
+                        }) 
+                }
             </div>
           
             </div>

@@ -33,9 +33,16 @@
     }
 
     .Service .items img:hover{
-        box-shadow: 0px 0px 30px silver;
-        background-color: #fff;
-        border-radius: 7px;
+        /* box-shadow: 0px 0px 30px #d4d1d1; */
+        /* box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 5px #99969670;  */
+        /* background-color: #fff; */
+        /* border-radius: 7px; */
+        
+        /* neomorphism css */
+        border-radius: 34px;
+        background: linear-gradient(145deg, #e1e1e1, #ffffff);
+        box-shadow:  13px 13px 26px #d5d5d5, 
+             -13px -13px 26px #ffffff;
     }
 
 }
