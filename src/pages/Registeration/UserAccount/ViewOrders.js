@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Component } from 'react';
 import {useHistory, Link, useParams} from 'react-router-dom'
 import axios from 'axios';
-import allData from './orderData.json';
 import './userProfile.css'
 
 // Task: To fetch data from json file "allData"

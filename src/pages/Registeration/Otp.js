@@ -48,7 +48,7 @@ class Otp extends Component {
             <div className="loginForm">
             <Form onSubmit={this.onSubmit}>
             <Form.Group controlId="formBasicEmail">
-            <Form.Control type="text" name="otp" value={this.state.otp} placeholder="Enter OTP" required onChange={this.onChange} autoFocus />
+            <Form.Control type="text" name="otp" value={this.state.otp} placeholder="Enter OTP" required onChange={this.onChange} autoFocus autoComplete="OFF" />
             </Form.Group>
             <Button variant="success btn btn-block" type="submit"> Get In! </Button>
             </Form>
