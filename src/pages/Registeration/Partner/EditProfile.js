@@ -157,7 +157,7 @@ function EditProfile(){
 
           <Form.Group controlId="formBasicEmail">
                   <Form.Label>Changes {field}</Form.Label>
-                  <Form.Control as="select" required value={form.newValue} onChange={updateField} name="newValue">
+                  <Form.Control as="select" autoFocus required value={form.newValue} onChange={updateField} name="newValue">
                   <option>Select...</option>
                   <option Value="Electrical">Electrical/Appliances</option>
                   <option Value="Home Cleaning">Home Cleaning</option>
@@ -191,7 +191,7 @@ function EditProfile(){
 
        <Form.Group controlId="formBasicEmail">
                <Form.Label>Changes {field}</Form.Label>
-               <Form.Control type="text" name="newValue" placeholder={oldValue} value={form.newValue} onChange={updateField} required/>
+               <Form.Control type="text" name="newValue" autoFocus placeholder={oldValue} value={form.newValue} onChange={updateField} required/>
            </Form.Group> 
 
            <div className="text-center">
