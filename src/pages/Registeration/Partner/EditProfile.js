@@ -148,24 +148,56 @@ function EditProfile(){
           catch(err=>console.log(err + " from sending partner update info"))
         }
 
-
       }
 
+      const updateService = ()=>{
+        
+         return(
+          <Form method="POST" onSubmit={finalStep}>
+
+          <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Changes {field}</Form.Label>
+                  <Form.Control as="select" required value={form.newValue} onChange={updateField} name="newValue">
+                  <option>Select...</option>
+                  <option Value="Electrical">Electrical/Appliances</option>
+                  <option Value="Home Cleaning">Home Cleaning</option>
+                  <option Value="Painting">Painting</option>
+                  <option Value="Plumbing">Plumbing</option>
+                  <option Value="Salon">Salon</option>
+                  <option value="Pest Control">Pest Control</option>
+                </Form.Control>
+                <Form.Text className="text-muted">
+                  Default: {oldValue} Service.
+            </Form.Text>
+             
+          </Form.Group> 
+              
+  
+              <div className="text-center">
+              <Button variant="warning" className="btn-block" type="submit">UPDATE</Button>
+              </div>
+              </Form>
+         )
+        
+      }
 
 
     return(
         <div className="container EditProfile">
-        <Form method="POST" onSubmit={finalStep}>
+        
+        {field === 'service'? updateService() :  
+       
+       <Form method="POST" onSubmit={finalStep}>
 
-        <Form.Group controlId="formBasicEmail">
-                <Form.Label>Changes {field}</Form.Label>
-                <Form.Control type="text" name="newValue" placeholder={oldValue} value={form.newValue} onChange={updateField} required/>
-            </Form.Group> 
+       <Form.Group controlId="formBasicEmail">
+               <Form.Label>Changes {field}</Form.Label>
+               <Form.Control type="text" name="newValue" placeholder={oldValue} value={form.newValue} onChange={updateField} required/>
+           </Form.Group> 
 
-            <div className="text-center">
-            <Button variant="warning" className="btn-block" type="submit">UPDATE</Button>
-            </div>
-            </Form>
+           <div className="text-center">
+           <Button variant="warning" className="btn-block" type="submit">UPDATE</Button>
+           </div>
+           </Form>}
         </div>
     );
 }

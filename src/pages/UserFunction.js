@@ -56,7 +56,8 @@ export const partnerRegisInfo = user => {
         city : user.city,
         pincode : user.pincode,
         state : user.state,
-        service : user.service
+        service : user.service,
+        partnerId: user.partnerId
     })
     .then(res=>{
         console.log('Partner regis Info Sended')

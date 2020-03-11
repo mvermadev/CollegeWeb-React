@@ -43,10 +43,13 @@ class Partner extends Component {
         service : this.state.service,
         partnerId: refvalue
       }
-  
+      
+      console.log(refvalue)
+
       partnerRegisInfo(partnerData).then(res=>{
-        this.props.history.push('/')
+        this.props.history.push('/partnerProfile')
       })
+    
   
     }
     render() { 
@@ -68,15 +71,32 @@ class Partner extends Component {
             <Form.Control type="text" placeholder="Enter City Pincode" required name="pincode" value={this.state.pincode} onChange={this.onChange}  />
             <Form.Label>State</Form.Label>
             <Form.Control type="text" placeholder="Enter State" required name="state" value={this.state.state} onChange={this.onChange}  />
+           
+            <Form.Group controlId="exampleForm.ControlSelect2">
             <Form.Label>Your Service</Form.Label>
-            <Form.Control type="text" placeholder="Which service you provide?" required name="service" value={this.state.service} onChange={this.onChange}  />
+            <Form.Control as="select" value={this.state.service} onChange={this.onChange} name="service" required>
+              <option value="">Choose...</option>
+              <option Value="Electrical">Electrical/Appliances</option>
+              <option Value="Home Cleaning">Home Cleaning</option>
+              <option Value="Painting">Painting</option>
+              <option Value="Plumbing">Plumbing</option>
+              <option Value="Salon">Salon</option>
+              <option value="Pest Control">Pest Control</option>
+            </Form.Control>
             <Form.Text className="text-muted">
-            We'll never share your information with anyone else.
+            Note: <Link to="contact">Contact us</Link>, if your service is different.
             </Form.Text>
+           
+          </Form.Group>
+
             </Form.Group>
+          
             <Button variant="warning btn btn-block" type="submit">REGISTER</Button>
             </Form>
             <Link to="/partnerLogin"><Button variant="info btn btn-block" className="mt-2">Partner Login</Button></Link>
+            <Form.Text className="text-muted">
+            We'll never share your information with anyone else.
+            </Form.Text>
             </div>
             </div>
             );

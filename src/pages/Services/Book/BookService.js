@@ -74,37 +74,37 @@ function BookService(){
         <Form method="POST" onSubmit={finalStep}>
         <Form.Group controlId="formBasicEmail">
             <Form.Label>Contact Name</Form.Label>
-            <Form.Control type="text" placeholder="Enter Name" name="name" value={form.name} onChange={updateField} />
+            <Form.Control type="text" placeholder="Enter Name" name="name" value={form.name} onChange={updateField} required />
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email (OPTIONAL)" name="email" value={form.email} onChange={updateField} />
+            <Form.Control type="email" placeholder="Enter email (OPTIONAL)" name="email" value={form.email} onChange={updateField} required />
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
             <Form.Label>Contact No.</Form.Label>
-            <Form.Control type="tel" placeholder="Enter contact no." name="phone" value={form.phone} onChange={updateField} />
+            <Form.Control type="tel" placeholder="Enter contact no." name="phone" value={form.phone} onChange={updateField} required />
         </Form.Group>
 
         <Form.Group controlId="exampleForm.ControlTextarea1">
         <Form.Label>Enter Address</Form.Label>
-        <Form.Control type="text" placeholder="Address 1" name="address1" value={form.address1} onChange={updateField} />
-        <Form.Control className="mt-2" type="text" placeholder="Address 2" name="address2" value={form.address2} onChange={updateField} />
+        <Form.Control type="text" placeholder="Address 1" name="address1" value={form.address1} onChange={updateField} required />
+        <Form.Control className="mt-2" type="text" placeholder="Address 2" name="address2" value={form.address2} onChange={updateField} required />
       </Form.Group>
       
       <Form.Group controlId="formBasicEmail">
       <Form.Label>City.</Form.Label>
-      <Form.Control type="text" placeholder="Enter Cty" name="city" value={form.city} onChange={updateField} />
+      <Form.Control type="text" placeholder="Enter Cty" name="city" value={form.city} onChange={updateField} required />
     </Form.Group>
       
       <Form.Group controlId="formBasicEmail">
       <Form.Label>Pincode.</Form.Label>
-      <Form.Control type="text" placeholder="Enter Area Pincode" name="pincode" value={form.pincode} onChange={updateField} />
+      <Form.Control type="text" placeholder="Enter Area Pincode" name="pincode" value={form.pincode} onChange={updateField} required />
     </Form.Group>
       
     <Form.Group controlId="formGridState">
     <Form.Label>State</Form.Label>
-    <Form.Control as="select" value={form.state} name="state" onChange={updateField}>
-      <option>Choose...</option>
+    <Form.Control as="select" value={form.state} name="state" onChange={updateField}  required>
+      <option value="">Choose...</option>
       <option>Andra Pradesh</option>
       <option>Arunachal Pradesh</option>
       <option>Assam</option>
@@ -136,7 +136,7 @@ function BookService(){
     </Form.Control>
   </Form.Group>
 
-  <Form.Group as={Col}>
+  <Form.Group as={Col} required>
     <Row sm={10}>
       <Form.Check className="ml-2"
         type="radio"

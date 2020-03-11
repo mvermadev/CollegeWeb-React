@@ -56,7 +56,7 @@ function PartProfile(){
     
     const editLink = {
          nameLink : '/editProfile/partner/name/'+name,
-         phoneLink : '/editProfile/partner/contact/'+phone,
+         phoneLink : '/editProfile/partner/phone/'+phone,
          emailLink : '/editProfile/partner/email/'+partEmail,
          cityLink : '/editProfile/partner/city/'+city,
          pincodeLink : '/editProfile/partner/pincode/'+pincode,
