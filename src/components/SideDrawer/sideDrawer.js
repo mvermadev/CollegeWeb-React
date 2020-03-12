@@ -72,7 +72,7 @@ class sideDrawer extends Component {
         <a href="/about"><li>About us</li></a>
         {localStorage.partAuth? yesPartner : noPartner}
         <a href="/contact"><li>Contact us</li></a>
-        <a href="http://localhost:4000/" target="blank"><li>ConnectBird</li></a>
+        <a href="http://localhost:5555/" target="blank"><li>ConnectBird</li></a>
       </ul>
     </nav> 
     );
