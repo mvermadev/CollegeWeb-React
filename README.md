@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-Complete Project <a href="https://drive.google.com/open?id=1vBgtCAc5PnvM-gLoJvRmeXDv-8JtuYxv">Documentation</a> <br/>
+Complete Project <a href="https://drive.google.com/open?id=1vBgtCAc5PnvM-gLoJvRmeXDv-8JtuYxv" target="_blank" alt="documentation">Documentation</a> <br/>
 In the project directory, you can run:
 
 ### `yarn start`
